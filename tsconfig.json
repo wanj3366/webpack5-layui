@@ -1,0 +1,14 @@
+// 支持 JSX，并将 TypeScript 编译到 ES5
+{
+  "compilerOptions": {
+    "outDir": "./dist/",
+    "sourceMap": true, // 启用 source map
+    "noImplicitAny": true,
+    "module": "es6",
+    "target": "es5",
+    "jsx": "react",
+    "allowJs": true,
+    "allowSyntheticDefaultImports" : true, // allowSyntheticDefaultImports esModuleInterop  为 true 时  保留TypeScript 中保留如import _ from 'lodash';的语法被让它作为一种默认的导入方式
+    "esModuleInterop" : true
+  }
+}
