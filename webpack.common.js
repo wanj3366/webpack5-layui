@@ -21,9 +21,7 @@ module.exports = {
     resolve: {
         extensions: ['.tsx', '.ts', '.js','jsx','json'],//表示，这几个文件的后缀名，可以省略不写
         alias: { // 表示别名
-            '@': path.join(__dirname, './src'), // 这样，@ 就表示 项目根目录中 src 的这一层路径
-            layer:path.join(__dirname, './assets/js/layer/layer.js'),
-            "layer.css":path.join(__dirname, './assets/js/layer/theme/default/layer.css')
+            '@': path.join(__dirname, './src') // 这样，@ 就表示 项目根目录中 src 的这一层路径
         }
     },
     optimization: { // 提取公共模块，防止模块重复
